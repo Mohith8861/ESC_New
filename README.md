@@ -24,7 +24,7 @@ _An overview of the CNN-Transformer Architecture._
 1. **CNN Frontend:**
    The initial layers consist of 2D Convolution layers combined with Batch Normalization, LeakyReLU activations, and MaxPooling. This segment extracts local spectral and temporal features before sequence tokenization.
 
-   ![Convolutional Block](conv_block.drawio.png)
+   <img src="conv_block.drawio.png" alt="Convolutional Block" width="400" />
 
 2. **Sequence Tokenization & Positional Embedding:**
    After the CNN layers extract feature maps, the outputs are reshaped and a positional embedding is added to track structural order within the sequence.
@@ -34,7 +34,7 @@ _An overview of the CNN-Transformer Architecture._
 
 4. **Classification Head:**
    The output from the transformer blocks is pooled using 1D Global Average Pooling, passed through dense layers, and terminates in a Softmax output representing our multiple sound classes.
-   ![Dense Block](dense_block.png)
+   <img src="dense_block.png" alt="Dense Block" width="400" />
 
 ## Dependencies
 
